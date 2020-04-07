@@ -4,19 +4,90 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="main.css">
+<style>
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+    </style>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button"><b>Movies</b> Rats</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Movies</a>
-      <a href="#about" class="w3-bar-item w3-button">Animes</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <!--nav bar-->
+    <div class="w3-top ">
+        <header class="w3-bar w3-black w3-card">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-text-white logo"><B>MOVIE</B> Rats</a>
+            <nav>
+                <a href="#" class="hide-dextop">
+                    <img src="https://res.cloudinary.com/start-ng/image/upload/v1586294523/menu_bpd6on.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-dextop hide-mobile w3-text-white " id="nav">
+                  <li id="exit" class="exit-btn hide-dextop"><img src="https://res.cloudinary.com/start-ng/image/upload/v1586294523/exit-to-app-button_oip4k1.svg" alt="exit menu"></li>    
+                  <li><a href="movies.html" class="w3-bar-item w3-button w3-padding-large w3-text-white">Movies</a></li>  
+                  <li><a href="animes.html" class="w3-text-white w3-bar-item w3-button w3-padding-large">Anime</a></li>  
+                  <li><a href="contacts.html" class="w3-text-white w3-bar-item w3-button w3-padding-large">Contact</a></li>    
+                </ul>
+            </nav>
+            </header>
+    </div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px"></div>
+    <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://res.cloudinary.com/start-ng/image/upload/v1586299944/1_upmhzx.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>The Witcher</h3>
+      <p><b></b></p>   
     </div>
   </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://res.cloudinary.com/start-ng/image/upload/v1586300160/5_2_ntrqxw.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Altered Carbon</h3>
+      <p><b></b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://res.cloudinary.com/start-ng/image/upload/v1586294525/GUY-RITCHIE_THE-GENTLEMEN_BOX-OFFICE_EARLY-TRACKING__ye1lpz.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>    
 </div>
+  
+<script>
+// for nav menu
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventdefault();
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventdefault();
+    });
+
+// slide pictures
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+</script>
+    
 </body>
 </html>
