@@ -1,34 +1,159 @@
 <!DOCTYPE html>
-<html>
-<title>Movies - Movies Rats</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="main.css">
-<script src="script.js"></script>
-<style>
-    body {font-family: "Lato", sans-serif}
-    .mySlides {display: none}
-    </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rats - Home</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/script.js"></script>
+</head>
 <body>
-
-    <!--nav bar-->
-    <div class="w3-top ">
-        <header class="w3-bar w3-grey w3-card">
-            <a href="index.html" class="w3-bar-item w3 w3-text-white logo"><B>MOVIE</B> Rats</a>
-            <nav>
+    <!--Nav bar -->
+    <div class="top">
+        <header class="bar gray card text-white">
+            <a href="index.html" class="button logo text-white"><b>Movie</b> Rats</a>
+<!-- search bar-->
+        <div class="hide-mobile">
+            <label for="search">Search Movie Rats:</label>
+            <input type="search" id="search" name="search">
+        </div>
+            <nav class="text-white">
                 <a href="#" class="hide-dextop">
-                    <img src="https://res.cloudinary.com/start-ng/image/upload/v1586294523/menu_bpd6on.svg" alt="toggle menu" class="menu" id="menu">
+                    <img src="./images/list.svg" alt="toggle menu" class="menu" id="menu">
                 </a>
-                <ul class="show-dextop hide-mobile w3-text-white " id="nav">
-                  <li id="exit" class="exit-btn hide-dextop"><img src="https://res.cloudinary.com/start-ng/image/upload/v1586294523/exit-to-app-button_oip4k1.svg" alt="exit menu"></li>    
-                  <li><a href="movies.html" class="w3-bar-item w3-button w3-padding-large w3-text-white">Movies</a></li>
-                  <li><a href="series.html" class="w3-bar-item w3-button w3-padding-large w3-text-white">Series</a></li>  
-                  <li><a href="animes.html" class="w3-text-white w3-bar-item w3-button w3-padding-large">Anime</a></li>  
-                  <li><a href="contacts.html" class="w3-text-white w3-bar-item w3-button w3-padding-large">Contact</a></li>    
+    
+                <ul class="show-dextop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-dextop"><img src="./images/close-window.png" alt="exit menu"></li>  
+                    <li id="exit" class="exit-btn hide-dextop"><img src="https://res.cloudinary.com/start-ng/image/upload/v1586294523/exit-to-app-button_oip4k1.svg" alt="exit menu"></li>    
+                    <li><a href="series.html" class="bar-item text-white button">Series</a></li>  
+                    <li><a href="animes.html" class="button bar-item text-white">Anime</a></li>  
+                    <li><a href="contacts.html" class="button bar-item text-white">Contact</a></li>    
                 </ul>
             </nav>
-            </header>
+        </header>    
     </div>
+    <!--Movie slide-->
+    <div>
+        <div class="w3-content" style="max-width:2000px;margin-top:46px"></div>
+    <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="" style="width:60%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3></h3>
+                <p><b></b></p>   
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="" style="width:60%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3></h3>
+                <p><b>.</b></p>    
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="" style="width:60%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3></h3>
+                <p><b></b></p>    
+            </div>
+        </div>    
+    </div>
+    </div>
+   
+    <!--contents-->
+    <div>
+        <h2>Today's News</h2>
+        <div class="container-2">
+            <div class="box-1">
+                <img src="./images/WQWmxUKowttx.jpg" alt="" style="width: 100%;">
+                <h3>Ten movies to watch this qurantine</h3>
+            </div>
+            <div class="box-2">
+                <h3>Ten series to watch this qurantine</h3>
+            </div>
+            <div class="box-3">
+                <h3>Ten animes to watch this qurantine</h3>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Quarantine list</h2>
+        <div class="container-2">
+            <div class="box-1">
+                <img src="./images/WQWmxUKowttx.jpg" alt="" style="width: 100%;">
+                <h3>Ten movies to watch this qurantine</h3>
+            </div>
+            <div class="box-2">
+                <h3>Ten series to watch this qurantine</h3>
+            </div>
+            <div class="box-3">
+                <h3>Ten animes to watch this qurantine</h3>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Netflex top ten</h2>
+        <div class="container-2">
+            <div class="box-1">
+                <img src="./images/WQWmxUKowttx.jpg" alt="" style="width: 100%;">
+                <h3>Ten movies to watch this qurantine</h3>
+            </div>
+            <div class="box-2">
+                <h3>Ten series to watch this qurantine</h3>
+            </div>
+            <div class="box-3">
+                <h3>Ten animes to watch this qurantine</h3>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Explore Editor's pick</h2>
+        <div class="container-2">
+            <div class="box-1">
+                <img src="./images/WQWmxUKowttx.jpg" alt="" style="width: 100%;">
+                <h3></h3>
+            </div>
+            <div class="box-2">
+                <h3>Ten series to watch this qurantine</h3>
+            </div>
+            <div class="box-3">
+                <h3>Ten animes to watch this qurantine</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventdefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventdefault();
+        });
+
+        // slide pictures
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 4000);    
+        }
+    </script>
 </body>
 </html>
