@@ -1,49 +1,228 @@
-
 <!DOCTYPE html>
-<html>
-<title>Movie Rats</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="main.css">
-<script src="script.js"></script>
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('https://res.cloudinary.com/start-ng/image/upload/v1586270373/https___images.saymedia-content.com_.image_MTY5ODE3MTkxNzY2NTY2MDg4_native-nerd-movie-list-of-45_cig6jk.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  z-index: 20%;
-}
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rats - Home</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2823fb7a5a.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</head>
 <body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <!--<div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div> -->
-    
-        <header class="w3-panel w3-center" style="padding:128px 16px">
-        <h1 class="w3-jumbo w3-animate-top"><b>Movie</b> Rats</h1>
-
-    <div class="w3-padding-small">
-      <div class="w3-bar w3-border w3-border-grey w3-black">
-        <a href="home.html" class="w3-bar-item w3-button">Home</a>
-        <a href="movies.html" class="w3-bar-item w3-button">Movies</a>
-        <a href="series.html" class="w3-bar-item w3-button">Series</a>
-        <a href="animes.html" class="w3-bar-item w3-button">Animes</a>
-        <a href="contacts.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
-      </div>
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">MOVIE RATS</a>
+        <a href="movies.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MOVIES</a>
+        <a href="series.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERIES</a>
+        <a href="animes.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ANIMES</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+            <a href="#" class="w3-bar-item w3-button">Extras</a>
+            <a href="#" class="w3-bar-item w3-button">Media</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
     </div>
-  </header>
-</div>
+    
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+    </div>
+    
+        <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+        <img src="" style="">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Los Angeles</h3>
+        <p><b>We had the best time playing at Venice Beach!</b></p>   
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="/w3images/ny.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>New York</h3>
+        <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="/w3images/chicago.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>Chicago</h3>
+        <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+        </div>
+    </div>
+    <hr>
+
+
+    <!-- contentgrid -->
+    <h2>Today's list</h2>
+    <div class="news-container w3-row">
+        <div class="container-1 w3-container">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1587132841/20_qtkcwb.jpg" style="width:100%">
+            <div class="">
+                <a href="qurantine.html" class="link"><p>Ten series to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1586294525/WQWmxUKowttx_tphk04.jpg" style="width:100%">
+            <div class="">
+                <a href="qurantine.html" class="link"><p>Ten movie to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+        
+        <div class="container-3">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1587133141/12_y4jroa.jpg" style="width:100%">
+            <div class="">
+                <a href="qurantine.html" class="link"><p>Ten anime to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h2>Qurantine list</h2>
+    <div class="news-container w3-row">
+        <div class="container-1 w3-container">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1587132841/20_qtkcwb.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten series to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1586294525/WQWmxUKowttx_tphk04.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten movie to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+
+        <div class="container-3">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1587133141/12_y4jroa.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten anime to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h2>Anime's list</h2>
+    <div class="news-container w3-row">
+        <div class="container-1 w3-container">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1587132841/20_qtkcwb.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten Animes to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1586294525/WQWmxUKowttx_tphk04.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten Animes for<br><b>newcomers</b></p></a>
+            </div>
+        </div>
+
+        <div class="container-3">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1587133141/12_y4jroa.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten anime to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <h2>Edidor's pick</h2>
+    <div class="news-container w3-row">
+        <div class="container-1 w3-container">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1587132841/20_qtkcwb.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten series to watch<br><b>NETFLEX</b></p></a>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1586294525/WQWmxUKowttx_tphk04.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten Animes for<br><b>newcomers</b></p></a>
+            </div>
+        </div>
+
+        <div class="container-3">
+            <img src="https://res.cloudinary.com/start-ng/image/upload/v1587133141/12_y4jroa.jpg" style="width:100%">
+            <div class="">
+                <a href="" class="link"><p>Ten anime to watch this<br><b>Qurantine</b></p></a>
+            </div>
+        </div>
+    </div>
+
+        <script>
+            // Automatic Slideshow - change image every 4 seconds
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000);    
+            }
+            
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            var modal = document.getElementById('ticketModal');
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+            // Accordion 
+            function myAccFunc() {
+            var x = document.getElementById("demoAcc");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+            }
+
+            // Click on the "Jeans" link on page load to open the accordion for demo purposes
+            document.getElementById("myBtn").click();
+
+
+            // Open and close sidebar
+            function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+            }
+            
+            function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+            }
+        </script>
 </body>
 </html>
