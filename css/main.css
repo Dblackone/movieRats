@@ -11,12 +11,38 @@ hr{
     border-top:1px solid #eee;
     margin:20px 0;
 }
+.background {
+    background-color: rgb(35, 34, 34);
+}
 .news-container {
     display: flex;
+    background-color: rgb(35, 34, 34);
+}
+.padding-bottom {
+    padding-bottom: 1.2em;
+}
+.container {
+    background-color: black;
+    color: yellow;
 }
 .news-container div {
     border: none;
     padding: 10px;
+}
+.footer-container {
+    background-color: rgb(30, 2, 2);
+    text-align: center;
+    color: white;
+}
+.footer {
+    padding-top: 2em;
+}
+.footer-links {
+    padding-top: .8em;
+    padding-bottom: 1.2em;
+}
+.margin-top {
+    margin-top: 3em;
 }
 .container-1 {
     flex: 1;
@@ -28,7 +54,7 @@ hr{
     flex: 1;
 }
 .link{
-    color: black;
+    color: yellow;
     font-family: helvetica;
     text-decoration: none;
     text-transform: uppercase;
