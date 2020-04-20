@@ -21,6 +21,16 @@ hr{
 .padding-bottom {
     padding-bottom: 1.2em;
 }
+.simg {
+    border-bottom-left-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+}
+.center {
+    text-align: center;
+    padding-left: 5em;
+}
 .container {
     background-color: black;
     color: yellow;
