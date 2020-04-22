@@ -40,7 +40,8 @@ ul {
     color: white;
 }
 .footer {
-    padding-top: 2em;
+    padding-top: 1.5em;
+    padding-bottom: .8em;
 }
 .footer-links {
     padding-top: .8em;
@@ -72,6 +73,9 @@ ul {
 .padding-bottom {
     padding-bottom: 1.2em;
 }
+.action {
+    color: whitesmoke!important;
+}
 
 /*img*/
 
@@ -83,7 +87,7 @@ ul {
 }
  /* others*/
 .link{
-    color: yellow;
+    color: whitesmoke;
     font-family: helvetica;
     text-decoration: none;
     text-transform: uppercase;
@@ -109,4 +113,10 @@ ul {
     font-style: normal;
     padding-top: .5em;
     padding-bottom: .1em;
+}
+.link-text {
+    font-size: .6rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Exo 2', sans-serif;
 }
