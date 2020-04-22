@@ -10,7 +10,7 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
 hr{
     border: .5px;
-    border-top:1px solid #eee;
+    border-top:1px solid black!important;
     margin:20px 0;
 }
 ul {
@@ -19,10 +19,14 @@ ul {
 /*container*/
 .news-container {
     display: flex;
-    background-color: rgb(35, 34, 34);
+    background-color: rgb(15, 14, 14);
+    border-bottom-left-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
 }
 .container {
-    background-color: black;
+    background-color: rgb(32, 28, 28);
     color: whitesmoke;
     font-family: 'Indie Flower', cursive;
 }
@@ -61,7 +65,9 @@ ul {
 .background {
     background-color: rgb(35, 34, 34);
 }
-
+.black {
+    background-color: black!important;
+}
 /*paddina and margin*/
 .padding-bottom {
     padding-bottom: 1.2em;
