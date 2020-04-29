@@ -28,10 +28,11 @@ ul {
     border-top-right-radius: 2.5%;
     border-bottom-right-radius: 2.5%;
 }
-.container {
+.main-container {
     background-color: rgb(32, 28, 28);
     color: whitesmoke;
     font-family: 'Indie Flower', cursive;
+    padding: 1.5em 1em 1.5em 1em;
 }
 .news-container div {
     border: none;
